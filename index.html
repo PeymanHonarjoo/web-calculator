@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/gif" />
+    <title>Claculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="cal-display">0</div>
+      <div class="operation">
+        <button class="number" id="one" onclick="displayNumber(this.id)">
+          1
+        </button>
+        <button class="number" id="two" onclick="displayNumber(this.id)">
+          2
+        </button>
+        <button class="number" id="three" onclick="displayNumber(this.id)">
+          3
+        </button>
+        <button class="operators" id="delete" onclick="eraser()">DEL</button>
+        <button class="number" id="four" onclick="displayNumber(this.id)">
+          4
+        </button>
+        <button class="number" id="five" onclick="displayNumber(this.id)">
+          5
+        </button>
+        <button class="number" id="six" onclick="displayNumber(this.id)">
+          6
+        </button>
+        <button class="operators" id="plus" onclick="compute(this.id)">
+          +
+        </button>
+        <button class="number" id="seven" onclick="displayNumber(this.id)">
+          7
+        </button>
+        <button class="number" id="eight" onclick="displayNumber(this.id)">
+          8
+        </button>
+        <button class="number" id="nine" onclick="displayNumber(this.id)">
+          9
+        </button>
+        <button class="operators" id="minus" onclick="compute(this.id)">
+          -
+        </button>
+        <button class="dot-btn" id="dot" onclick="displayNumber(this.id)">
+          .
+        </button>
+        <button class="number" id="zero" onclick="displayNumber(this.id)">
+          0
+        </button>
+        <button class="operators" id="division" onclick="compute(this.id)">
+          /
+        </button>
+        <button class="operators" id="times" onclick="compute(this.id)">
+          &times;
+        </button>
+        <button class="clear-btn" id="clear" onclick="clearDisplay() ">
+          Clear
+        </button>
+        <button class="equal-btn" id="equal" onclick="resultDisplay()">
+          =
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
